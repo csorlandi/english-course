@@ -24,12 +24,14 @@ export const Logo = styled.Image.attrs({
 `;
 
 export const Title = styled.Text`
+  font-family: 'OpenSans-Bold';
   margin-top: ${metrics.base}px;
   font-size: ${fonts.superBig}px;
   color: ${colors.primary};
 `;
 
 export const Description = styled.Text`
+  font-family: 'Nunito-Regular';
   margin-top: ${metrics.base}px;
   font-size: ${fonts.regular}px;
   color: ${colors.grayDark};
@@ -59,6 +61,7 @@ export const ButtonContainer = styled.TouchableOpacity`
 `;
 
 export const ButtonText = styled.Text`
+  font-family: 'Nunito-Bold';
   text-transform: uppercase;
   font-size: ${fonts.regular}px;
   color: ${({ filled }) => (filled ? colors.primaryWhite : colors.primaryDark)};

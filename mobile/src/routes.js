@@ -2,6 +2,8 @@ import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
+import Loading from '~/pages/Loading';
+
 import Auth from '~/pages/Auth';
 
 import SignUpPlatform from '~/pages/SignUpPlatform';
@@ -34,6 +36,13 @@ function HomeTab() {
 export default function Routes() {
   return (
     <Stack.Navigator>
+      <Stack.Screen
+        name="loading"
+        component={Loading}
+        options={{
+          headerShown: false,
+        }}
+      />
       <Stack.Screen
         name="Auth"
         component={Auth}
