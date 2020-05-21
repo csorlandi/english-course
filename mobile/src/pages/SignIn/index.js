@@ -2,10 +2,10 @@ import React from 'react';
 
 import * as Styled from './styles';
 
-export default function Home() {
+export default function SignIn() {
   return (
     <Styled.Container>
-      <Styled.Title>Página Home</Styled.Title>
+      <Styled.Title>Página SignIN</Styled.Title>
     </Styled.Container>
   );
 }
