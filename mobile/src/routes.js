@@ -41,8 +41,8 @@ export default function Routes() {
           headerShown: false,
         }}
       />
-      <Stack.Screen name="HomeTab" component={HomeTab} />
       <Stack.Screen name="SignUpStack" component={SignUpStack} />
+      <Stack.Screen name="HomeTab" component={HomeTab} />
     </Stack.Navigator>
   );
 }
