@@ -18,7 +18,13 @@ const Tab = createBottomTabNavigator();
 function SignUpStack() {
   return (
     <Stack.Navigator>
-      <Stack.Screen name="SignUpPlatform" component={SignUpPlatform} />
+      <Stack.Screen
+        name="SignUpPlatform"
+        component={SignUpPlatform}
+        options={{
+          headerShown: false,
+        }}
+      />
       <Stack.Screen name="SignUpEmail" component={SignUpEmail} />
       <Stack.Screen name="SignUpChoose" component={SignUpChoose} />
     </Stack.Navigator>
@@ -37,6 +43,13 @@ export default function Routes() {
   return (
     <Stack.Navigator>
       <Stack.Screen
+        name="SignUpStack"
+        component={SignUpStack}
+        options={{
+          headerShown: false,
+        }}
+      />
+      <Stack.Screen
         name="loading"
         component={Loading}
         options={{
@@ -50,7 +63,6 @@ export default function Routes() {
           headerShown: false,
         }}
       />
-      <Stack.Screen name="SignUpStack" component={SignUpStack} />
       <Stack.Screen name="HomeTab" component={HomeTab} />
     </Stack.Navigator>
   );
