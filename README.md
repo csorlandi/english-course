@@ -67,7 +67,7 @@ A aplicação mobile será a principal dentre as demais, é ela quem o usuário 
 
 O Front-end será criado para funções administrativas, ou seja, o usuário final (aluno) não terá acesso ao Dashboard, mas os Administradores terão acesso para controlar o CRUD (Criação, Leitura, Atualização e Exclusão) de todas as informações da aplicação, desde os textos do tutorial inicial até as aulas e usuários.
 
-### ⚙️ Back-end
+### 🎛 Back-end
 
 - #### [Documentação Detalhada](https://github.com/csorlandi/english-course/tree/master/backend)
 
