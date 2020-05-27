@@ -79,7 +79,7 @@ Para finalizar, o Back-end será o responsável por garantir a aplicação de to
 
 ### 📖 Documentação
 
-- [ ] Trabalhando em progresso ...
+- [ ] Trabalho em progresso ...
 
 ### 🛠 Feito com
 
