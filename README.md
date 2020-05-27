@@ -55,15 +55,21 @@ A ideia é que na aplicação o usuário possa assistir aulas diárias de inglê
 
 O Projeto será desenvolvido como um Full Stack App, ou seja, Front-end, Back-end e Mobile, cada uma das partes terá uma função específica, as funções e detalhes de cada parte pode ser vista abaixo:
 
- ### Mobile [(mais detalhes aqui)](https://github.com/csorlandi/english-course/tree/master/mobile)
+ ### Mobile
+ 
+ - #### [Documentação Detalhada](https://github.com/csorlandi/english-course/tree/master/mobile)
 
 A aplicação mobile será a principal dentre as demais, é ela quem o usuário final vai utilizar para conseguir estudar inglês, como detalhado na descrição do projeto, no mobile ficará a estrutura do curso, onde serão aplicadas as metologias de ensino através das aulas.
 
-### Front-end [(mais detalhes aqui)](https://github.com/csorlandi/english-course/tree/master/frontend)
+### Front-end
+
+- #### [Documentação Detalhada](https://github.com/csorlandi/english-course/tree/master/frontend)
 
 O Front-end será criado para funções administrativas, ou seja, o usuário final (aluno) não terá acesso ao Dashboard, mas os Administradores terão acesso para controlar o CRUD (Criação, Leitura, Atualização e Exclusão) de todas as informações da aplicação, desde os textos do tutorial inicial até as aulas e usuários.
 
-### Back-end[(mais detalhes aqui)](https://github.com/csorlandi/english-course/tree/master/backend)
+### Back-end
+
+- #### [Documentação Detalhada](https://github.com/csorlandi/english-course/tree/master/backend)
 
 Para finalizar, o Back-end será o responsável por garantir a aplicação de toda Regra de Negócio do projeto, além como guardar e gerenciar todos os dados enviados tanto do Front-end quanto do Mobile, e por esse motivo ele será desenvolvido como uma API Rest.
 
