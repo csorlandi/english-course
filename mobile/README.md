@@ -14,21 +14,8 @@
 A ideia é que na aplicação o usuário possa assistir aulas diárias de inglês. Para isso ele deve se cadastrar e/ou fazer login com Email/Senha ou usando suas Redes Sociais (Facebook ou Google). Depois da etapa de autenticação ele tem uma quantidade de aulas gratuitas para assistir até ter que fazer o Upgrade da sua conta (comprar o restante das aulas) para dar continuidade aos estudos. Ao término de cada aula serão liberadas algumas palavras, que vão para um Dicionário, no qual o usuário poderá consultar as palavras que já aprendeu em algum momento do curso. Para finalizar, será possível o usuário editar as informações do seu perfil e também visualizar um histórico das aulas já assistidas.</p>
 
 <p align="center">
-  <a href="https://github.com/csorlandi">
-    <img alt="Made by Claudio Orlandi" src="https://img.shields.io/badge/made%20by-Claudio%20Orlandi-brightgreen">
-  </a>
-
-  <img alt="Last Commit" src="https://img.shields.io/github/last-commit/csorlandi/english-course">
-
-  <img alt="Contributors" src="https://img.shields.io/github/contributors/csorlandi/english-course">
-
-  <img alt="License" src="https://img.shields.io/badge/license-MIT-%2304D361">
-</p>
-
-<p align="center">
   <img src="./readme/autenticacao.png" width="187" height="406" />
   <img src="./readme/login.png" width="187" height="406" />
-  <img src="./readme/lesson-home.png" width="187" height="406" />
   <img src="./readme/lesson-overview.png" width="187" height="406" />
   <img src="./readme/dicionario.png" width="187" height="406" />
 </p>
