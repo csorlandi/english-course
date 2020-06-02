@@ -35,7 +35,9 @@ export default function SignIn() {
           </Styled.GoogleButtonContainer>
         </Styled.SocialButtonsContainer>
       </Styled.FormContainer>
-      <Styled.UseTermsContainer>
+      <Styled.UseTermsContainer
+        onPress={() => navigation.navigate('use-terms')}
+      >
         <Styled.UseTermsDescription>
           Ao entrar no English Course, você concorda com os nossos{' '}
           <Styled.UseTermsBold>Termos de Uso</Styled.UseTermsBold> e{' '}

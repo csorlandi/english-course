@@ -5,6 +5,7 @@ import ForgotPassword from '~/pages/AuthStack/SignInStack/ForgotPassword';
 import UseTerms from '~/pages/AuthStack/SignInStack/UseTerms';
 
 import BackIcon from '~/components/BackIcon';
+import HeaderTitle from '~/components/HeaderTitle';
 
 import { colors, fonts } from '~/styles';
 
@@ -32,8 +33,49 @@ export default function SignInStack() {
           },
         })}
       />
-      <Stack.Screen name="forgot-password" component={ForgotPassword} />
-      <Stack.Screen name="use-terms" component={UseTerms} />
+      <Stack.Screen
+        name="forgot-password"
+        component={ForgotPassword}
+        options={({ navigation }) => ({
+          headerLeft: () => <BackIcon navigation={navigation} />,
+          headerTitleAlign: 'center',
+          headerTitle: 'Esqueci Minha Senha',
+          headerTitleStyle: {
+            color: colors.grayLight,
+            fontFamily: 'Nunito-Bold',
+            fontSize: fonts.regular,
+          },
+          headerStyle: {
+            backgroundColor: colors.grayWhite,
+            elevation: 0,
+            borderBottomWidth: 0,
+          },
+        })}
+      />
+      <Stack.Screen
+        name="use-terms"
+        component={UseTerms}
+        options={({ navigation }) => ({
+          headerLeft: () => <BackIcon navigation={navigation} />,
+          headerTitleAlign: 'center',
+          headerTitle: (props) => (
+            <HeaderTitle {...props}>
+              Termos de Uso e Política de Privacidade
+            </HeaderTitle>
+          ),
+          headerTitleStyle: {
+            color: colors.grayLight,
+            fontFamily: 'Nunito-Bold',
+            fontSize: fonts.regular,
+            textAlign: 'center',
+          },
+          headerStyle: {
+            backgroundColor: colors.grayWhite,
+            elevation: 0,
+            borderBottomWidth: 0,
+          },
+        })}
+      />
     </Stack.Navigator>
   );
 }

@@ -1,12 +1,20 @@
 import styled from 'styled-components';
 
-export const Container = styled.View`
+import { colors, metrics, fonts } from '~/styles';
+
+export const Container = styled.SafeAreaView`
   flex: 1;
-  align-items: center;
-  justify-content: center;
+  background-color: ${colors.grayWhite};
 `;
 
-export const Title = styled.Text`
-  font-weight: bold;
-  font-size: 24px;
+export const TextContainer = styled.ScrollView`
+  flex: 1;
+  padding: ${metrics.base}px;
+`;
+
+export const Terms = styled.Text`
+  font-family: 'Nunito-Regular';
+  font-size: ${fonts.smaller}px;
+  line-height: ${fonts.small}px;
+  color: ${colors.graySuperDark};
 `;
