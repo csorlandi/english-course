@@ -149,7 +149,7 @@ export const UseTermsContainer = styled.TouchableOpacity`
 `;
 
 export const UseTermsDescription = styled.Text`
-  font-family: 'OpenSans-Regular';
+  font-family: 'Nunito-Regular';
   font-size: ${fonts.smaller}px;
   color: ${colors.grayDarker};
   text-align: center;

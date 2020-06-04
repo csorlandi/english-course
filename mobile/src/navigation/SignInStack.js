@@ -29,7 +29,8 @@ export default function SignInStack() {
           headerStyle: {
             backgroundColor: colors.grayWhite,
             elevation: 0,
-            borderBottomWidth: 0,
+            borderWidth: 0,
+            shadowColor: colors.transparent,
           },
         })}
       />
@@ -48,7 +49,8 @@ export default function SignInStack() {
           headerStyle: {
             backgroundColor: colors.grayWhite,
             elevation: 0,
-            borderBottomWidth: 0,
+            borderWidth: 0,
+            shadowColor: colors.transparent,
           },
         })}
       />
@@ -72,7 +74,8 @@ export default function SignInStack() {
           headerStyle: {
             backgroundColor: colors.grayWhite,
             elevation: 0,
-            borderBottomWidth: 0,
+            borderWidth: 0,
+            shadowColor: colors.transparent,
           },
         })}
       />

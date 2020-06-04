@@ -13,7 +13,7 @@ import { Stack } from './navigators';
 
 export default function LessonStack() {
   return (
-    <Stack.Navigator>
+    <Stack.Navigator headerMode="none">
       <Stack.Screen name="introduction-lesson" component={IntroductionLesson} />
       <Stack.Screen name="audio-lesson" component={AudioLesson} />
       <Stack.Screen name="dissertative-lesson" component={DissertativeLesson} />

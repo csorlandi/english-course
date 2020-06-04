@@ -17,7 +17,7 @@
     "prop-types": "^15.7.2",
     "react": "16.11.0",
     "react-native": "0.62.2",
-    "react-native-app-intro": "^1.1.5",
+    "react-native-app-intro-slider": "^4.0.4",
     "react-native-gesture-handler": "^1.6.1",
     "react-native-progress": "^4.1.2",
     "react-native-reanimated": "^1.8.0",

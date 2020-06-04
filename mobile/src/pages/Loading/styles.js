@@ -2,6 +2,11 @@ import styled from 'styled-components';
 
 import { metrics, fonts, colors } from '~/styles';
 
+export const SafeAreaContainer = styled.SafeAreaView`
+  flex: 1;
+  background-color: ${colors.grayWhite};
+`;
+
 export const Container = styled.View`
   flex: 1;
   align-items: center;
