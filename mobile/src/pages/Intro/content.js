@@ -1,26 +1,24 @@
+import fast from '~/assets/images/fast.png';
+import simple from '~/assets/images/simple.png';
+import detail from '~/assets/images/detail.png';
+
 export default [
   {
-    title: 'Page 1',
-    description: 'Description 1',
-    img: 'https://goo.gl/Bnc3XP',
-    imgStyle: {
-      height: 80 * 2.5,
-      width: 109 * 2.5,
-    },
-    backgroundColor: '#fa931d',
-    fontColor: '#fff',
-    level: 10,
+    key: '1',
+    title: 'Rápido',
+    text: 'Aprendizado rápido e memorização de palavras',
+    image: fast,
   },
   {
-    title: 'Page 2',
-    description: 'Description 2',
-    img: 'https://goo.gl/Bnc3XP',
-    imgStyle: {
-      height: 93 * 2.5,
-      width: 103 * 2.5,
-    },
-    backgroundColor: '#a4b602',
-    fontColor: '#fff',
-    level: 10,
+    key: '2',
+    title: 'Simples',
+    text: 'Aprendizado fácil com as Novas Aulas',
+    image: simple,
+  },
+  {
+    key: '3',
+    title: 'Detalhado',
+    text: 'Estatísticas Detalhadas do seu progresso',
+    image: detail,
   },
 ];

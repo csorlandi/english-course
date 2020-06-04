@@ -12,5 +12,5 @@ export default function HeaderTitle({ children, ...rest }) {
 }
 
 HeaderTitle.propTypes = {
-  children: PropTypes.element.isRequired,
+  children: PropTypes.string.isRequired,
 };
