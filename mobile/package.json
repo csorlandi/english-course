@@ -12,6 +12,7 @@
   "dependencies": {
     "@react-native-community/masked-view": "^0.1.10",
     "@react-navigation/bottom-tabs": "^5.4.7",
+    "@react-navigation/material-bottom-tabs": "^5.2.10",
     "@react-navigation/native": "^5.4.2",
     "@react-navigation/stack": "^5.3.9",
     "prop-types": "^15.7.2",
@@ -19,6 +20,7 @@
     "react-native": "0.62.2",
     "react-native-app-intro-slider": "^4.0.4",
     "react-native-gesture-handler": "^1.6.1",
+    "react-native-paper": "^3.10.1",
     "react-native-progress": "^4.1.2",
     "react-native-reanimated": "^1.8.0",
     "react-native-safe-area-context": "^1.0.2",
