@@ -1,8 +1,4 @@
-/* eslint-disable react/no-unused-prop-types */
 import React from 'react';
-import PropTypes from 'prop-types';
-
-import Icon from 'react-native-vector-icons/FontAwesome';
 
 import Dictionary from '~/pages/MainStack/Dictionary';
 import Upgrade from '~/pages/MainStack/Upgrade';
@@ -12,35 +8,15 @@ import { colors } from '~/styles';
 import LessonStack from './LessonStack';
 import ProfileStack from './ProfileStack';
 
+import MainTabIcon from '~/components/MainTabIcon';
+
 import { Tab } from './navigators';
 
 export default function MainTab() {
   return (
     <Tab.Navigator
       screenOptions={({ route }) => ({
-        tabBarIcon: ({ focused, color }) => {
-          let iconName;
-
-          switch (route.name) {
-            case 'lesson-stack':
-              iconName = `${focused ? 'list-ul' : 'align-justify'}`;
-              break;
-            case 'dictionary':
-              iconName = `${focused ? 'file-text' : 'file'}`;
-              break;
-            case 'profile-stack':
-              iconName = `${focused ? 'user-circle' : 'user'}`;
-              break;
-            case 'upgrade':
-              iconName = `${focused ? 'cart-plus' : 'shopping-cart'}`;
-              break;
-            default:
-              iconName = 'book';
-              break;
-          }
-
-          return <Icon name={iconName} color={color} size={22} />;
-        },
+        tabBarIcon: (props) => <MainTabIcon {...props} route={route.name} />,
       })}
       barStyle={{
         backgroundColor: colors.grayWhite,
@@ -73,8 +49,3 @@ export default function MainTab() {
     </Tab.Navigator>
   );
 }
-
-MainTab.propTypes = {
-  focused: PropTypes.bool.isRequired,
-  color: PropTypes.string.isRequired,
-};
