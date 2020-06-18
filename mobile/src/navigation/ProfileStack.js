@@ -8,7 +8,13 @@ import { Stack } from './navigators';
 export default function ProfileStack() {
   return (
     <Stack.Navigator>
-      <Stack.Screen name="overview-profile" component={OverviewProfile} />
+      <Stack.Screen
+        name="overview-profile"
+        component={OverviewProfile}
+        options={{
+          headerShown: false,
+        }}
+      />
       <Stack.Screen name="edit-profile" component={EditProfile} />
     </Stack.Navigator>
   );
