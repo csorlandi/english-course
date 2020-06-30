@@ -1,10 +1,14 @@
 import React from 'react';
 
+import { useNavigation } from '@react-navigation/native';
+
 import * as Styled from './styles';
 
 import profileImage from '~/assets/images/do-does.png';
 
 export default function OverviewProfile() {
+  const navigation = useNavigation();
+
   return (
     <Styled.SafeAreaContainer>
       <Styled.Container>
@@ -47,7 +51,9 @@ export default function OverviewProfile() {
             </Styled.HistoryItemContainer>
           </Styled.HistoryListContainer>
         </Styled.HistoryListWrapperContainer>
-        <Styled.OptionsItemContainer>
+        <Styled.OptionsItemContainer
+          onPress={() => navigation.navigate('edit-profile')}
+        >
           <Styled.OptionsItemLeftIcon name="pencil" />
           <Styled.OptionsItemTitle>Editar Perfil</Styled.OptionsItemTitle>
           <Styled.OptionsItemRightIcon name="chevron-right" />

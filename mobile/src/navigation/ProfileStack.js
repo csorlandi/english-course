@@ -15,7 +15,13 @@ export default function ProfileStack() {
           headerShown: false,
         }}
       />
-      <Stack.Screen name="edit-profile" component={EditProfile} />
+      <Stack.Screen
+        name="edit-profile"
+        component={EditProfile}
+        options={{
+          headerShown: false,
+        }}
+      />
     </Stack.Navigator>
   );
 }
