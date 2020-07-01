@@ -37,6 +37,36 @@ export default function OverviewLesson() {
             </Styled.ListItemText>
             <Styled.ListItemRightIcon name="chevron-right" state="danger" />
           </Styled.ListItemContainer>
+          <Styled.ListItemContainer>
+            <Styled.ListItemLeftIcon name="file-video-o" />
+            <Styled.ListItemText>Vídeo Aula</Styled.ListItemText>
+            <Styled.ListItemRightIcon name="chevron-right" />
+          </Styled.ListItemContainer>
+          <Styled.ListItemContainer>
+            <Styled.ListItemLeftIcon name="file-audio-o" />
+            <Styled.ListItemText>Áudio Aula</Styled.ListItemText>
+            <Styled.ListItemRightIcon name="chevron-right" />
+          </Styled.ListItemContainer>
+          <Styled.ListItemContainer>
+            <Styled.ListItemLeftIcon name="file-text-o" />
+            <Styled.ListItemText>Exercício Objetivo</Styled.ListItemText>
+            <Styled.ListItemRightIcon name="chevron-right" />
+          </Styled.ListItemContainer>
+          <Styled.ListItemContainer>
+            <Styled.ListItemLeftIcon name="file-video-o" />
+            <Styled.ListItemText>Vídeo Aula</Styled.ListItemText>
+            <Styled.ListItemRightIcon name="chevron-right" />
+          </Styled.ListItemContainer>
+          <Styled.ListItemContainer>
+            <Styled.ListItemLeftIcon name="file-audio-o" />
+            <Styled.ListItemText>Áudio Aula</Styled.ListItemText>
+            <Styled.ListItemRightIcon name="chevron-right" />
+          </Styled.ListItemContainer>
+          <Styled.ListItemContainer>
+            <Styled.ListItemLeftIcon name="file-text-o" />
+            <Styled.ListItemText>Exercício Objetivo</Styled.ListItemText>
+            <Styled.ListItemRightIcon name="chevron-right" />
+          </Styled.ListItemContainer>
         </Styled.ListContainer>
       </Styled.Container>
     </Styled.SafeAreaContainer>
