@@ -44,19 +44,9 @@ export const Br = styled.View`
   height: ${fonts.smaller}px;
 `;
 
-export const ListContainer = styled.ScrollView``;
-
-export const ListItemContainer = styled.TouchableOpacity`
-  flex: 1;
-  flex-direction: row;
-  align-items: center;
-  background-color: #fff;
-  border-radius: ${metrics.baseRadius}px;
-  padding: ${metrics.base}px;
-  margin-top: ${metrics.base}px;
-  border-width: 1px;
-  border-color: ${colors.grayLight};
-`;
+export const ListContainer = styled.ScrollView.attrs({
+  showsVerticalScrollIndicator: false,
+})``;
 
 const colorPicker = (state) => {
   switch (state) {
@@ -69,9 +59,20 @@ const colorPicker = (state) => {
   }
 };
 
+export const ListItemContainer = styled.TouchableOpacity`
+  flex: 1;
+  flex-direction: row;
+  align-items: center;
+  background-color: #fff;
+  border-radius: ${metrics.baseRadius}px;
+  padding: ${metrics.base}px;
+  margin-top: ${metrics.base}px;
+  background-color: ${({ state }) => colorPicker(state)};
+`;
+
 export const ListItemLeftIcon = styled(Icon)`
   font-size: ${fonts.superBig}px;
-  color: ${({ state }) => colorPicker(state)};
+  color: ${colors.grayWhite};
 `;
 
 export const ListItemText = styled.Text`
@@ -79,10 +80,10 @@ export const ListItemText = styled.Text`
   margin: 0 ${metrics.base}px;
   font-family: 'Nunito-Regular';
   font-size: ${fonts.small}px;
-  color: ${({ state }) => colorPicker(state)};
+  color: ${colors.grayWhite};
 `;
 
 export const ListItemRightIcon = styled(Icon)`
   font-size: ${fonts.small}px;
-  color: ${({ state }) => colorPicker(state)};
+  color: ${colors.grayWhite};
 `;
