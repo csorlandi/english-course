@@ -10,10 +10,10 @@ import { Stack } from './navigators';
 
 export default function Routes() {
   return (
-    <Stack.Navigator headerMode="none">
+    <Stack.Navigator headerMode="none" initialRouteName>
       <Stack.Screen name="loading" component={Loading} />
-      <Stack.Screen name="intro" component={Intro} />
       <Stack.Screen name="auth-stack" component={AuthStack} />
+      <Stack.Screen name="intro" component={Intro} />
       <Stack.Screen name="main-tab" component={MainTab} />
     </Stack.Navigator>
   );

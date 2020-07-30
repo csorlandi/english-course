@@ -3,12 +3,16 @@ import React from 'react';
 
 import { NavigationContainer } from '@react-navigation/native';
 
-import Routes from './navigation';
+import AppProvider from '~/hooks';
 
-export default function App() {
+import App from './App';
+
+export default function index() {
   return (
     <NavigationContainer>
-      <Routes />
+      <AppProvider>
+        <App />
+      </AppProvider>
     </NavigationContainer>
   );
 }
